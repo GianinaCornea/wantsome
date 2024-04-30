@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza-order</title>
+        <style>
+            nav{
+                background-color: yellow;
+                align-content: space-around;
+                padding-left: 60px;
+            }
+            a{
+                padding: 80px;  
+                
+            }
+            label{
+                color:skyblue;
+            }
+            [type="text"]{
+                border-color: green;
+            }
+            [type="email"]{
+                background-color: blue;
+            }
+            [type="submit"]{
+                background-color: green;
+            }
+            body{
+                background-color: salmon;
+            }
+            div{
+                border-style: solid;               
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav><h1>
+            <img src="https://unblast.com/wp-content/uploads/2018/09/Bubbles.jpg" height="60" width="60">
+            <a target="_blank" href="https://www.google.ro/" ><b><ins>Home</ins></b></a>
+            <a target="_blank" href="https://www.google.ro/"><b><ins>About Us</ins></b></a>
+            <a target="_blank" href="https://www.google.ro/"><b><ins>Our Clients</ins></b></a>
+            <a target="_blank" href="https://www.google.ro/"><b><ins>Contact Us</ins></b></a></h1>
+        </nav>
+        <div><form action="https://www.google.ro/">
+            <h2>Pizza Order</h2>
+            <label for="nume"><b>Your Name:</b></label>
+            <input type="text" name="nume" minlength="3" maxlength="10" placeholder="your name" required><br><br>
+            <label for="email"><b>Your email:</b></label>
+            <input type="email" name="email" placeholder="your email" required><br><br>
+            <label for="topping"><b>Topping:</b></label>
+            <input type="radio" name="topping" value="Supreme"><b>Supreme</b>
+            <input type="radio" name="topping" value="Vegetarian" checked ><b>Vegetarian</b>
+            <input type="radio" name="topping" value="Hawaian"><b>Hawaian</b><br><br>
+            <label for="sauce"><b>Sauce:</b></label>
+            <select name="sauce">
+                <option value="Tomato"><b>Tomato</b></option>
+                <option value="Sweet Chilli"><b>Sweet Chilli</b></option>
+                <option value="Tzatziki"><b>Tzatziki</b></option>
+            </select><br><br>
+            <label for="extras"><b>Extras:</b></label>
+            <input type="checkbox" name="extras" value="Cheese" checked><b>Cheese</b>
+            <input type="checkbox" name="extras" value="Onions" ><b>Onions</b>
+            <input type="checkbox" name="extras" value="Olives" ><b>Olives</b><br><br>
+            <label for="data de livrare"><b>Data de livrare</b></label>
+            <input type="date" name="data de livrare" min="2024-04-10"><br><br>
+            <label for="numar"><b>Numar:</b></label>
+            <input type="number" name="numar" min="1" max="7" value="1"><br><br>
+            <label for="delivery instructions"><b>Delivery Instructions:</b></label><br>
+            <textarea name="instructions" rows="7" cols="80" placeholder="delivery instructions" required></textarea><br><br>
+            <input type="submit" value="Send order">
+            <input type="reset" value="Reset">
+        </div></form>
+    </body>
+</html>
